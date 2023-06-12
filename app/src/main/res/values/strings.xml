@@ -8,7 +8,9 @@
     <string name="kms_per_liter">KMs por litro</string>
     <string name="total_spend">Seu gasto total será de:</string>
     <string name="button_calculate">Calcular</string>
+    <string name="button_clear">Limpar</string>
     <string name="value_result">R$ 0</string>
 
     <string name="validation_fill_all_filds">Preencha todos os campos</string>
+    <string name="validation_clan_filds">Campos Limpos</string>
 </resources>

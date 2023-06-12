@@ -16,13 +16,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         binding.buttonCalculate.setOnClickListener(this)
+        binding.buttonClear.setOnClickListener(this)
 
     }
 
     override fun onClick(view: View) {
         if (view.id == R.id.button_calculate) {
             calculate()
+        } else if (view.id == R.id.button_clear) {
+            clear()
         }
+
     }
 
     // validar os dados informados
@@ -46,6 +50,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             Toast.makeText(this, R.string.validation_fill_all_filds ,Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun clear() {
+
+        binding.editDistance.text.clear()
+        binding.editPrice.text.clear()
+        binding.editAutonomy.text.clear()
+
+        binding.textTotalValue.text = "R$ 0"
+
+        Toast.makeText(this, R.string.validation_clan_filds ,Toast.LENGTH_SHORT).show()
     }
 
 }
